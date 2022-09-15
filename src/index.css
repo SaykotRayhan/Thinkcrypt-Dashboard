@@ -131,6 +131,13 @@ select {
   font-size: 15px;
   text-align: right;
 }
+select:focus {
+  border: 1px solid #c6c8ca !important;
+  outline: none !important;
+}
+select::-ms-expand {
+  display: none;
+}
 
 @media (max-width: 1536px) {
   select {
