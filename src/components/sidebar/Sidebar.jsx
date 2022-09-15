@@ -22,7 +22,7 @@ const Sidebar = ({ closeSidebar }) => {
       </div>
       <div className='bottom'>
         <ul>
-          <li>Summary</li>
+          <li className='active'>Summary</li>
           <li className='img-container'>
             <img src={plusIcon} alt='' />
             <span>Lead campaigns</span>

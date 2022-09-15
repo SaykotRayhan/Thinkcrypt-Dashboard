@@ -102,6 +102,17 @@
         position: relative;
         z-index: 1;
 
+        &.active {
+          background: var(--primary-color);
+          border-radius: 20px;
+          color: white;
+        }
+        &.active:hover {
+          background: var(--primary-color);
+          border-radius: 20px;
+          color: white;
+        }
+
         @include xl {
           font-size: 15px;
           height: 35px;
@@ -135,9 +146,9 @@
         }
 
         &:hover {
-          background: var(--primary-color);
+          background: #ffe9f1;
           border-radius: 20px;
-          color: white;
+          color: var(--text-color);
         }
       }
     }
