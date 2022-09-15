@@ -1,0 +1,29 @@
+@import '../../style/mixin/mediaMixin.scss';
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 30px;
+  .logo {
+    width: 150px;
+    padding: 32px 0 0 0;
+    @media (max-width: 1536px) {
+      padding: 10px 0 0 0;
+      width: 90px;
+    }
+    @media (max-width: 1280px) {
+      width: 80px;
+    }
+    @media (max-width: 1024px) {
+      width: 60px;
+    }
+    @media (max-width: 640px) {
+    }
+  }
+  .menu {
+    display: none;
+    @include md {
+      display: block;
+    }
+  }
+}

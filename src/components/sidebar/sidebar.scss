@@ -1,0 +1,145 @@
+@import '../../style/mixin/mediaMixin.scss';
+
+.sidebar-wrapper {
+  padding: 20px 40px 42px 35px;
+
+  @include xl {
+    padding: 15px 20px 42px 25px;
+  }
+  @include lg {
+    padding: 15px 15px 42px 15px;
+  }
+
+  .close-btn-container {
+    display: none;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+
+    @include md {
+      display: flex;
+    }
+
+    img {
+      height: 12px;
+      width: 12px;
+    }
+
+    .close-text {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 19px;
+    }
+  }
+
+  .top {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @include xl {
+      padding-top: 30px;
+    }
+
+    .section-img {
+      margin-bottom: 30px;
+
+      @include xl {
+        margin-bottom: 20px;
+        height: 100px;
+      }
+    }
+
+    .title {
+      font-weight: 700;
+      font-size: 16px;
+
+      @include xl {
+        font-size: 15px;
+      }
+    }
+    .sub-title {
+      font-weight: 400;
+      font-size: 14px;
+
+      @include xl {
+        font-size: 13px;
+      }
+    }
+    .logout-icon {
+      margin-top: 20px;
+    }
+  }
+  .bottom {
+    margin-top: 40px;
+    @include xl {
+      margin-top: 30px;
+    }
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      cursor: pointer;
+
+      @include xl {
+        gap: 18px;
+      }
+
+      li {
+        height: 40px;
+        display: flex;
+        justify-content: end;
+        list-style: none;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: -0.03em;
+        transition: all 0.3s ease;
+        padding: 10px 20px 10px 0;
+        position: relative;
+        z-index: 1;
+
+        @include xl {
+          font-size: 15px;
+          height: 35px;
+          padding: 8px 20px 8px 0;
+        }
+        @include lg {
+          font-size: 14px;
+          height: 35px;
+          padding: 8px 20px 8px 0;
+        }
+
+        &.img-container {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          img {
+            height: 40px;
+            width: 40px;
+            background: white;
+            border-radius: 50%;
+
+            @include xl {
+              height: 35px;
+              width: 35px;
+            }
+            @include lg {
+              height: 30px;
+              width: 30px;
+            }
+          }
+        }
+
+        &:hover {
+          background: var(--primary-color);
+          border-radius: 20px;
+          color: white;
+        }
+      }
+    }
+  }
+}

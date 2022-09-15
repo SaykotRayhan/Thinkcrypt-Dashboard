@@ -1,0 +1,272 @@
+@import '../../style/mixin/mediaMixin.scss';
+.dashboard-wrapper {
+  .header {
+    display: flex;
+    justify-content: flex-end;
+    font-weight: 600;
+    font-size: 32px;
+    // line-height: 38px;
+    letter-spacing: 0.01em;
+    padding-right: 20px;
+
+    @include xl {
+      font-size: 20px;
+    }
+    @include lg {
+      font-size: 18px;
+    }
+    @include md {
+      margin-top: 5px;
+    }
+  }
+  .glimpses-of-campaigns {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+
+    @include xl {
+      margin-top: 20px;
+    }
+    @include sm {
+      flex-direction: column-reverse;
+      gap: 10px;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .circle-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex: 1;
+      @include sm {
+        width: 100%;
+      }
+      .doted-line {
+        height: 0.5px;
+        width: 30%;
+        border: 1px dashed #c0bdcc;
+        @include xl {
+          width: 25%;
+        }
+        @include lg {
+          width: 15%;
+        }
+        @include md {
+          width: 22%;
+        }
+        @include sm {
+          width: 7%;
+        }
+        @include xs {
+          width: 3%;
+        }
+      }
+    }
+    .glimpses-text {
+      font-weight: 400;
+      font-size: 20px;
+
+      @include xl {
+        font-size: 18px;
+      }
+      @include sm {
+        font-size: 16px;
+        width: 100%;
+        text-align: right;
+      }
+    }
+  }
+  .control-campaigns {
+    margin-top: 40px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 15px;
+
+    @include xl {
+      margin-top: 20px;
+    }
+
+    span {
+      font-weight: 400;
+      font-size: 20px;
+      // line-height: 24px;
+
+      @include xl {
+        font-size: 16px;
+      }
+    }
+    .switch {
+      width: 40px;
+      height: 22px;
+
+      @include xl {
+        width: 35px;
+        height: 18px !important;
+      }
+    }
+    .slider:before {
+      height: 18px;
+      width: 18px;
+      left: 3px;
+      bottom: 2px;
+      transform: translateX(16px);
+
+      @include xl {
+        height: 15px;
+        width: 15px;
+      }
+    }
+    input:checked + .slider:before {
+      transform: translateX(0);
+    }
+  }
+  .card-container {
+    padding: 40px 40px 40px 0;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    width: 100%;
+    overflow-x: auto;
+    // transform: rotate(-90deg) translateY(-100px);
+
+    @include xl {
+      padding: 20px 20px 25px 0;
+    }
+  }
+
+  .yearly-details {
+    // margin-top: 40px;
+    // padding-top: 20px;
+    border-radius: 20px;
+    padding: 10px 30px 100px 30px;
+    background: #ffffff;
+    filter: drop-shadow(2.257px 12.803px 54px rgba(105, 95, 151, 0.078));
+    @include xl {
+      // margin-top: 25px;
+      padding-top: 10px;
+      padding: 10px 30px 30px 30px;
+    }
+
+    .section-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+
+      .icon-container {
+        display: flex;
+        gap: 10px;
+
+        @include sm {
+          margin-bottom: 20px;
+        }
+      }
+
+      .filter-container {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 20px;
+        flex-wrap: wrap-reverse;
+
+        .select-container {
+          position: relative;
+
+          img {
+            height: 6px;
+            position: absolute;
+            top: 16px;
+            left: 10px;
+
+            @include xl {
+              height: 5px;
+              position: absolute;
+              top: 13px;
+              left: 8px;
+            }
+          }
+        }
+        .sleep {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+
+          span {
+            font-weight: 400;
+            font-size: 20px;
+
+            @include xl {
+              font-size: 18px;
+            }
+          }
+          div {
+            height: 15px;
+            width: 15px;
+            border-radius: 50%;
+            background: var(--primary-color);
+
+            @include xl {
+              height: 13px;
+              width: 13px;
+            }
+          }
+        }
+
+        .a-month {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+
+          span {
+            font-weight: 400;
+            font-size: 20px;
+
+            @include xl {
+              font-size: 18px;
+            }
+          }
+
+          div {
+            height: 15px;
+            width: 15px;
+            border-radius: 50%;
+            border: 0.5px solid #cacfd9;
+
+            @include xl {
+              height: 13px;
+              width: 13px;
+            }
+          }
+        }
+
+        .text {
+          font-weight: 400;
+          font-size: 20px;
+
+          @include xl {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+
+    .chart-container {
+      margin-top: 60px;
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      align-items: center;
+      padding-bottom: 10px;
+
+      overflow-x: auto;
+
+      @include xl {
+        margin-top: 30px;
+      }
+    }
+  }
+}

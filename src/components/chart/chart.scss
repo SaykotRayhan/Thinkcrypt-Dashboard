@@ -1,0 +1,42 @@
+@import '../../style/mixin/mediaMixin.scss';
+.chart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  min-width: 160px;
+  
+
+  .chart-text {
+    min-height: 50px;
+    font-weight: 600;
+    font-size: 21px;
+    text-align: center;
+
+    @include xl {
+      min-height: 40px;
+      font-size: 16px;
+      font-weight: 500;
+    }
+  }
+  .percentage {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+  }
+  img {
+    width: 85%;
+
+    @include xl {
+      width: 70%;
+    }
+  }
+  .total {
+    font-weight: 400;
+    font-size: 17px;
+
+    @include xl {
+      font-size: 15px;
+    }
+  }
+}
