@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/Thinkcrypt-Dashboard/static/css/main.e05723a8.css",
-    "main.js": "/Thinkcrypt-Dashboard/static/js/main.3d385529.js",
+    "main.css": "/Thinkcrypt-Dashboard/static/css/main.a21dcfaa.css",
+    "main.js": "/Thinkcrypt-Dashboard/static/js/main.6a40c56a.js",
     "static/media/avatar.png": "/Thinkcrypt-Dashboard/static/media/avatar.9980d87b25f40f5dec97.png",
     "index.html": "/Thinkcrypt-Dashboard/index.html",
-    "main.e05723a8.css.map": "/Thinkcrypt-Dashboard/static/css/main.e05723a8.css.map",
-    "main.3d385529.js.map": "/Thinkcrypt-Dashboard/static/js/main.3d385529.js.map"
+    "main.a21dcfaa.css.map": "/Thinkcrypt-Dashboard/static/css/main.a21dcfaa.css.map",
+    "main.6a40c56a.js.map": "/Thinkcrypt-Dashboard/static/js/main.6a40c56a.js.map"
   },
   "entrypoints": [
-    "static/css/main.e05723a8.css",
-    "static/js/main.3d385529.js"
+    "static/css/main.a21dcfaa.css",
+    "static/js/main.6a40c56a.js"
   ]
 }
